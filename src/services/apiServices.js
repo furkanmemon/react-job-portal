@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = '/api';
+// const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://my-json-server.typicode.com/furkanmemon/react-job-portal';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
