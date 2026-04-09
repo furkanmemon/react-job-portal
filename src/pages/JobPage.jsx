@@ -113,8 +113,10 @@ const JobPage = ({ deleteJob }) => {
 };
 
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`/jobs/${params.id}`);
+  const res = await fetch(`https://my-json-server.typicode.com/furkanmemon/react-job-portal/jobs/${params.id}`);
   const data = await res.json();
+  console.log(data)
+  console.log('checking data on kob page')
   return data;
 };
 
